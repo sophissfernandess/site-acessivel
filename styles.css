@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+
+* {
+    box-sizing: border-box;
+  }
+:root {
+    --laranja-claro: #003ce0;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #5fb2f7;
+    --alto-contraste-link: #467ce2;
+    --filament-saturation: 0;
+    --filament-lightness: 40;
+    --fitting-lightness: 30;
+    --chord-lightness: 50;
+    --bg-lightness: 5;
+    --glass-lightness: 30;
+    --glass-saturation: 10;
+    --light-alpha: 0;
+    --ceiling: 50;
+    --bulb-hue: 70;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    background: hsl(215, 100%, calc(var(--bg-lightness) * 100%));
+    background-color:#3f92fd;
+    margin: 0;
+    padding: 0;
+}
+z
+h1{
+  border-radius: 10px;
+}
+section {
+    padding-bottom: 5rem;
+}
+
+
+.nav-link {
+    color: #003ce0;
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 30%;
+    height: 66px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 4px;
+    border: none;
+    width: 10em;
+    height: 3em;
+    align-content: center;
+
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat,
+    url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+h2 {
+  font-family: 'Lemon', serif;
+  font-size: clamp(1.5em, 5vw, 2.5em); /* Ajusta entre 1.5em e 2.5em baseado no viewport */
+  font-style: normal;
+  color: var(--laranja-claro);
+  text-align: center; /* Para centralizar o título */
+  word-wrap: break-word; /* Evita que palavras longas estourem o layout */
+  
+}
+
+
+h2 {
+  display: flex;
+  flex-wrap: wrap; /* Permite que elementos internos quebrem linha */
+  justify-content: center; /* Centraliza o conteúdo */
+  gap: 10px; /* Adiciona espaçamento entre os elementos internos */
+}
+
+h2 {
+  max-width: 90%; /* Evita que ocupe toda a tela */
+  margin: auto; /* Centraliza no meio da tela */
+}
+@media (max-width: 600px) {
+  h2 {
+      font-size: 1.8em; /* Ajusta o tamanho para telas menores */
+  }
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+  font:bolder;
+}
+
+
+#galeria {
+    background-color: #b83c3c;
+}
+
+
+#contato {
+    background-size: cover;
+    padding: 1rem 1rem;
+
+}
+
+.formulario {
+    background-color: #b83c3c;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: #3f92fd;
+    background-color: ;
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #3f92fd;
+}
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .container h1 {
+    font-size: 42px;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .container h1 span {
+    color: #003ce0;
+  }
+  
+  #entrada-de-conteudo {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  #entrada-de-conteudo textarea {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    padding: 15px;
+  }
+  
+  input[type="file"] {
+    display: none;
+    text-align: center;
+  }
+  
+  .acoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .acao-box {
+    padding: 15px;
+    gap: 15px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .acoes select,
+  .acoes button,
+  #arquivo-label {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #selecao-voz {
+    width: 100%;
+  }
+  
+  .acoes button {
+    background-color: #003ce0;
+    color: #fff;
+  
+    transition: 0.3s;
+  }
+  
+  #arquivo-label {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #003ce0;
+    text-align: center;
+  }
+  
+  .acoes button:hover,
+  #arquivo-label:hover {
+    background-color:#003ce0;
+  }
+  
+  
